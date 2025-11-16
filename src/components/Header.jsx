@@ -3,11 +3,11 @@ import React from 'react';
 const Header = () => {
   return (
     <header className="header">
-      <a href="/">
-        <img className="header__logo" src="/header-logo.png" alt="logo" />
+      <a href="/" className="header__logo">
+        <img className="" src="/header-logo.png" alt="logo" />
       </a>
-      <a>
-        <img src="header__shopping-basket" alt="basket" />
+      <a className="header__shopping-basket">
+        <img src="/basket.png" alt="basket" />
       </a>
     </header>
   );
