@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
+import ProductCards from './components/ProductCards';
 
 function App() {
   return (
     <>
       <div className="wrapper">
         <Header />
+        <ProductCards />
         <div>
           {' '}
           Автор иконок:{' '}
