@@ -3,12 +3,13 @@ import Card from './Card';
 import { useState, useEffect } from 'react';
 
 const ProductCards = () => {
+  const [cards, setCards] = useState([]);
   useEffect(
     () =>
       fetch('http://localhost:3000/cards')
         .then((response) => response.json())
-        .then((cards) => console.log(cards))
-        .catch((error) => console.log(error)),
+        .then((serverCards) => setCards(serverCards))
+        .catch((error) => console.log(error), console.log(cards)),
     []
   );
 
