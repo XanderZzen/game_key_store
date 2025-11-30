@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Card = ({ props }) => {
+const Card = ({ gameName }) => {
   return (
     <div className="card">
       <img className="card__poster" src="/posters/mk-11.jpg" alt="poster" />
-      <p>{name}</p>
+      <p>{gameName}</p>
     </div>
   );
 };

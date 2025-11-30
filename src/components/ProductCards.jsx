@@ -1,24 +1,42 @@
 import React from 'react';
 import Card from './Card';
 import { useState, useEffect } from 'react';
+import Pagination from './Pagination';
 
 const ProductCards = () => {
   const [cards, setCards] = useState([]);
-  useEffect(
-    () =>
-      fetch('http://localhost:3000/cards')
-        .then((response) => response.json())
-        .then((serverCards) => setCards(serverCards))
-        .catch((error) => console.log(error), console.log(cards)),
-    []
-  );
+  const [currentPage, setCurrentPage] = useState(1);
+  const [cardsPerPage, setCardsPerPage] = useState(9);
+
+  useEffect(() => {
+    const fetchCards = async () => {
+      const response = await fetch('http://localhost:3000/cards');
+      const data = await response.json();
+      setCards(data);
+    };
+    fetchCards();
+  }, []);
+
+  const lastCardIndex = currentPage * cardsPerPage;
+  const firstCardIndex = lastCardIndex - cardsPerPage;
+  const currentCards = cards.slice(firstCardIndex, lastCardIndex);
+  console.log(currentCards);
 
   return (
-    <main className="product-cards">
-      {cards.map((card) => (
-        <Card key={card.id} gname={card.className} />
-      ))}
-    </main>
+    <>
+      <main className="product-cards">
+        {currentCards.map((card) => (
+          <Card key={card.id} gameName={card.name} />
+        ))}
+      </main>
+      <div>
+        <Pagination
+          totalCards={cards.length}
+          cardsPerPage={cardsPerPage}
+          setCurrentPage={setCurrentPage}
+        />
+      </div>
+    </>
   );
 };
 
