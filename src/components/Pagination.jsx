@@ -1,6 +1,11 @@
 import React from 'react';
 
-const Pagination = ({ totalCards, cardsPerPage, setCurrentPage }) => {
+const Pagination = ({
+  totalCards,
+  cardsPerPage,
+  setCurrentPage,
+  currentPage,
+}) => {
   let pages = [];
 
   for (let i = 1; i <= Math.ceil(totalCards / cardsPerPage); i++) {
@@ -8,10 +13,14 @@ const Pagination = ({ totalCards, cardsPerPage, setCurrentPage }) => {
   }
   console.log(pages);
   return (
-    <div>
+    <div className="pagination">
       {pages.map((page, index) => {
         return (
-          <button key={index} onClick={() => setCurrentPage(page)}>
+          <button
+            key={index}
+            onClick={() => setCurrentPage(page)}
+            className={page == currentPage ? 'active' : ''}
+          >
             {page}
           </button>
         );

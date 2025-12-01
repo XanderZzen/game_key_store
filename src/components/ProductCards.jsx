@@ -34,6 +34,7 @@ const ProductCards = () => {
           totalCards={cards.length}
           cardsPerPage={cardsPerPage}
           setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
         />
       </div>
     </>

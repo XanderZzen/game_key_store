@@ -45,5 +45,26 @@ body {
   border-color: rgb(68, 1, 175);
 }
 
-.card__poster {
+/* .card__poster {
+} */
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination button {
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px 0px 10px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.pagination button.active {
+  border-color: #101010;
+  background: #ffe400;
+  color: #101010;
 }
