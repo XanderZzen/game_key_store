@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import { CartProvider } from '../context/CartProvider';
 import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 
@@ -8,6 +9,7 @@ const ProductCards = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [cardsPerPage, setCardsPerPage] = useState(9);
 
+  //обработка входных данных с сервера
   useEffect(() => {
     const fetchCards = async () => {
       const response = await fetch('http://localhost:3000/cards');
@@ -17,26 +19,28 @@ const ProductCards = () => {
     fetchCards();
   }, []);
 
+  // определяем первую и последнюю карточку товара
   const lastCardIndex = currentPage * cardsPerPage;
   const firstCardIndex = lastCardIndex - cardsPerPage;
   const currentCards = cards.slice(firstCardIndex, lastCardIndex);
-  console.log(currentCards);
 
   return (
     <>
-      <main className="product-cards">
-        {currentCards.map((card) => (
-          <Card key={card.id} gameName={card.name} />
-        ))}
-      </main>
-      <div>
-        <Pagination
-          totalCards={cards.length}
-          cardsPerPage={cardsPerPage}
-          setCurrentPage={setCurrentPage}
-          currentPage={currentPage}
-        />
-      </div>
+      <CartProvider>
+        <main className="product-cards">
+          {currentCards.map((card) => (
+            <Card key={card.id} gameName={card.name} />
+          ))}
+        </main>
+        <div>
+          <Pagination
+            totalCards={cards.length}
+            cardsPerPage={cardsPerPage}
+            setCurrentPage={setCurrentPage}
+            currentPage={currentPage}
+          />
+        </div>
+      </CartProvider>
     </>
   );
 };

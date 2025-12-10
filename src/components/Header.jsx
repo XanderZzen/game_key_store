@@ -8,6 +8,7 @@ const Header = () => {
       </a>
       <a className="header__shopping-basket">
         <img src="/basket.png" alt="basket" />
+        <div className="header__shopping-basket-counter">1</div>
       </a>
     </header>
   );

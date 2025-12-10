@@ -24,6 +24,18 @@ body {
   height: 3em;
 }
 
+.header__shopping-basket-counter {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: red;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 0px 6px 0px 6px;
+  margin-top: 35px;
+  margin-left: 5px;
+}
+
 .product-cards {
   display: flex;
   flex-direction: row;
@@ -48,6 +60,7 @@ body {
 /* .card__poster {
 } */
 
+/* Пагинация */
 .pagination {
   display: flex;
   flex-direction: row;
