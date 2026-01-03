@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from './Card';
-import { CartProvider } from '../context/CartProvider';
 import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 
@@ -26,21 +25,19 @@ const ProductCards = () => {
 
   return (
     <>
-      <CartProvider>
-        <main className="product-cards">
-          {currentCards.map((card) => (
-            <Card key={card.id} gameName={card.name} />
-          ))}
-        </main>
-        <div>
-          <Pagination
-            totalCards={cards.length}
-            cardsPerPage={cardsPerPage}
-            setCurrentPage={setCurrentPage}
-            currentPage={currentPage}
-          />
-        </div>
-      </CartProvider>
+      <main className="product-cards">
+        {currentCards.map((card) => (
+          <Card key={card.id} gameName={card.name} />
+        ))}
+      </main>
+      <div>
+        <Pagination
+          totalCards={cards.length}
+          cardsPerPage={cardsPerPage}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+        />
+      </div>
     </>
   );
 };
