@@ -27,7 +27,7 @@ const ProductCards = () => {
     <>
       <main className="product-cards">
         {currentCards.map((card) => (
-          <Card key={card.id} gameName={card.name} />
+          <Card key={card.id} gameName={card.name} path={card.path} />
         ))}
       </main>
       <div>

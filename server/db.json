@@ -2,23 +2,28 @@
   "cards": [
     {
       "id": 1,
-      "name": "Doom: Eternal"
+      "name": "Doom: Eternal",
+      "path": "\\posters\\doom_eternal.jpg"
     },
     {
       "id": 2,
-      "name": "Doom: Eternal"
+      "name": "Cyberpunk 2077",
+      "path": "\\posters\\cyberpunk_2077.jpg"
     },
     {
       "id": 3,
-      "name": "Doom: Eternal"
+      "name": "Assassin’s Creed Mirage",
+      "path": "\\posters\\assassing's_creed_mirage.jpg"
     },
     {
       "id": 4,
-      "name": "Doom: Eternal"
+      "name": "Black Myth: Wukon",
+      "path": "\\posters\\black_myth_wukong.jpg"
     },
     {
       "id": 5,
-      "name": "Doom: Eternal"
+      "name": "Call of Duty: Modern Warfare",
+      "path": "\\posters\\call_of_duty_modern_warfare.jpg"
     },
     {
       "id": 6,

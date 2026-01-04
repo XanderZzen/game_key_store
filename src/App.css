@@ -57,8 +57,15 @@ body {
   border-color: rgb(68, 1, 175);
 }
 
-/* .card__poster {
-} */
+.card__poster_container {
+  height: 150px;
+}
+
+.card__poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* Пагинация */
 .pagination {
