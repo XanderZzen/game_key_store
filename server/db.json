@@ -27,59 +27,53 @@
     },
     {
       "id": 6,
-      "name": "Doom: Eternal"
+      "name": "Diablo 4",
+      "path": "\\posters\\diablo_4.jpg"
     },
     {
       "id": 7,
-      "name": "Doom: Eternal"
+      "name": "God of war: Ragnarok",
+      "path": "\\posters\\god_of_war_ragnarok.jpg"
     },
     {
       "id": 8,
-      "name": "Doom: Eternal"
+      "name": "Half-life: Alyx",
+      "path": "\\posters\\half_life_alyx.jpg"
     },
     {
       "id": 9,
-      "name": "Doom: Eternal"
+      "name": "Halo: infinite",
+      "path": "\\posters\\halo_infinite.jpg"
     },
     {
       "id": 10,
-      "name": "Doom: Eternal"
+      "name": "Hellblade: Senua’s Sacrifice",
+      "path": "\\posters\\hellblade_senua’s_sacrifice.jpg"
     },
     {
       "id": 11,
-      "name": "Doom: Eternal"
+      "name": "Lords of the fallen",
+      "path": "\\posters\\lords_of_the_fallen.jpg"
     },
     {
       "id": 12,
-      "name": "Doom: Eternal"
+      "name": "Mass effect: LE",
+      "path": "\\posters\\mass_effect_le.jpg"
     },
     {
       "id": 13,
-      "name": "Doom: Eternal"
+      "name": "Mortal Kombat 11",
+      "path": "\\posters\\mk-11.jpg"
     },
     {
       "id": 14,
-      "name": "Doom: Eternal"
+      "name": "Red dead redemption 2",
+      "path": "\\posters\\red_dead_redemption_2.jpg"
     },
     {
       "id": 15,
-      "name": "Doom: Eternal"
-    },
-    {
-      "id": 9,
-      "name": "Doom: Eternal"
-    },
-    {
-      "id": 16,
-      "name": "Doom: Eternal"
-    },
-    {
-      "id": 17,
-      "name": "ololo"
-    },
-    {
-      "id": 18,
-      "name": "Doom: Eternal"
+      "name": "Resident Evil 3",
+      "path": "\\posters\\resident_evil_3.jpg"
     }
   ]
 }
