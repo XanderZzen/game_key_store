@@ -3,32 +3,35 @@ import './App.css';
 import Header from './components/Header';
 import ProductCards from './components/ProductCards';
 import { CartProvider } from './context/CartProvider';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <CartProvider>
-        <div className="wrapper">
-          <Header />
-          <ProductCards />
-          <div>
-            {' '}
-            Автор иконок:{' '}
-            <a
-              href="https://www.flaticon.com/ru/authors/frey-wazza"
-              title="Frey Wazza"
-            >
+    <Router>
+      <>
+        <CartProvider>
+          <div className="wrapper">
+            <Header />
+            <ProductCards />
+            <div className="icon-author">
               {' '}
-              Frey Wazza{' '}
-            </a>{' '}
-            from{' '}
-            <a href="https://www.flaticon.com/ru/" title="Flaticon">
-              www.flaticon.com'
-            </a>
+              Автор иконок:{' '}
+              <a
+                href="https://www.flaticon.com/ru/authors/frey-wazza"
+                title="Frey Wazza"
+              >
+                {' '}
+                Frey Wazza{' '}
+              </a>{' '}
+              from{' '}
+              <a href="https://www.flaticon.com/ru/" title="Flaticon">
+                www.flaticon.com'
+              </a>
+            </div>
           </div>
-        </div>
-      </CartProvider>
-    </>
+        </CartProvider>
+      </>
+    </Router>
   );
 }
 
