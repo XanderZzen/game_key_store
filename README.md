@@ -1,20 +1,38 @@
-# React + Vite
+# Game key store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Интернет-магазин игровых ключей, созданный с помощью React и сборщика проектов Vite, для эмуляции сервера использован JSON-Server.
 
-Currently, two official plugins are available:
+Доступный функционал:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- поиск по названию
+- добавление товаров в корзину
+- просмотр содержимого корзины
+- удаление товаров из корзины
+- пагинация с фиксированным количеством элементов
 
-## React Compiler
+## Как запустить проект
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Установить node.js (https://nodejs.org/)
+2. Установить зависимости, для этого в терминале необходимо ввести команду: npm install
+3. Запустить JSON-server. В терминале ввести команду: npx json-server server/db.json
+4. Запустить dev-сервер для разработки. В новом окне терминала ввести команду: npm run dev
+5. Открыть адрес dev-сервера в браузере.
 
-## Expanding the ESLint configuration
+## Технологии
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React + Vite - фронтенд
+- React Router DOM - маршрутизация
+- Context API - управление состояниями корзины и поиска
+- JSON-server - создание виртуально сервера с данными
 
-First of all you need to start "json-server": npx json-server server/db.json
+## Roadmap
 
-then: npm run dev
+Я продолжаю работу над проектом, планирую добавить:
+
+- cохранение корзины в 'localStorage'
+- возможность менять количество товаров в корзине
+- отображение общей стоимости товаров в корзине
+- адаптивный дизайн
+- анимации карточек товара и добавления товаров в корзину
+- индикаторы загрузки
+- Сделать задержку поиска (чтобы не искал на каждую букву)

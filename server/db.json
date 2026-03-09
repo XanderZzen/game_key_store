@@ -3,77 +3,107 @@
     {
       "id": 1,
       "name": "Doom: Eternal",
-      "path": "\\posters\\doom_eternal.jpg"
+      "path": "/posters/doom_eternal.jpg",
+      "path_small": "/posters/small/doom_eternal.jpg",
+      "price": "999р."
     },
     {
       "id": 2,
       "name": "Cyberpunk 2077",
-      "path": "\\posters\\cyberpunk_2077.jpg"
+      "path": "/posters/cyberpunk_2077.jpg",
+      "path_small": "/posters/small/cyberpunk_2077.jpg",
+      "price": "999р."
     },
     {
       "id": 3,
       "name": "Assassin’s Creed Mirage",
-      "path": "\\posters\\assassing's_creed_mirage.jpg"
+      "path": "/posters/assassing's_creed_mirage.jpg",
+      "path_small": "/posters/small/assassing's_creed_mirage.jpg",
+      "price": "999р."
     },
     {
       "id": 4,
-      "name": "Black Myth: Wukon",
-      "path": "\\posters\\black_myth_wukong.jpg"
+      "name": "Black Myth: Wukong",
+      "path": "/posters/black_myth_wukong.jpg",
+      "path_small": "/posters/small/black_myth_wukong.jpg",
+      "price": "999р."
     },
     {
       "id": 5,
       "name": "Call of Duty: Modern Warfare",
-      "path": "\\posters\\call_of_duty_modern_warfare.jpg"
+      "path": "/posters/call_of_duty_modern_warfare.jpg",
+      "path_small": "/posters/small/call_of_duty_modern_warfare.jpg",
+      "price": "999р."
     },
     {
       "id": 6,
       "name": "Diablo 4",
-      "path": "\\posters\\diablo_4.jpg"
+      "path": "/posters/diablo_4.jpg",
+      "path_small": "/posters/small/diablo_4.jpg",
+      "price": "999р."
     },
     {
       "id": 7,
       "name": "God of war: Ragnarok",
-      "path": "\\posters\\god_of_war_ragnarok.jpg"
+      "path": "/posters/god_of_war_ragnarok.jpg",
+      "path_small": "/posters/small/god_of_war_ragnarok.jpg",
+      "price": "999р."
     },
     {
       "id": 8,
       "name": "Half-life: Alyx",
-      "path": "\\posters\\half_life_alyx.jpg"
+      "path": "/posters/half_life_alyx.jpg",
+      "path_small": "/posters/small/half_life_alyx.jpg",
+      "price": "999р."
     },
     {
       "id": 9,
       "name": "Halo: infinite",
-      "path": "\\posters\\halo_infinite.jpg"
+      "path": "/posters/halo_infinite.jpg",
+      "path_small": "/posters/small/halo_infinite.jpg",
+      "price": "999р."
     },
     {
       "id": 10,
       "name": "Hellblade: Senua’s Sacrifice",
-      "path": "\\posters\\hellblade_senua’s_sacrifice.jpg"
+      "path": "/posters/hellblade_senua’s_sacrifice.jpg",
+      "path_small": "/posters/small/hellblade_senua’s_sacrifice.jpg",
+      "price": "999р."
     },
     {
       "id": 11,
       "name": "Lords of the fallen",
-      "path": "\\posters\\lords_of_the_fallen.jpg"
+      "path": "/posters/lords_of_the_fallen.jpg",
+      "path_small": "/posters/small/lords_of_the_fallen.jpg",
+      "price": "999р."
     },
     {
       "id": 12,
       "name": "Mass effect: LE",
-      "path": "\\posters\\mass_effect_le.jpg"
+      "path": "/posters/mass_effect_le.jpg",
+      "path_small": "/posters/small/mass_effect_le.jpg",
+      "price": "999р."
     },
     {
       "id": 13,
       "name": "Mortal Kombat 11",
-      "path": "\\posters\\mk-11.jpg"
+      "path": "/posters/mk-11.jpg",
+      "path_small": "/posters/small/mk-11.jpg",
+      "price": "999р."
     },
     {
       "id": 14,
       "name": "Red dead redemption 2",
-      "path": "\\posters\\red_dead_redemption_2.jpg"
+      "path": "/posters/red_dead_redemption_2.jpg",
+      "path_small": "/posters/small/red_dead_redemption_2.jpg",
+      "price": "999р."
     },
     {
       "id": 15,
       "name": "Resident Evil 3",
-      "path": "\\posters\\resident_evil_3.jpg"
+      "path": "/posters/resident_evil_3.jpg",
+      "path_small": "/posters/small/resident_evil_3.jpg",
+      "price": "999р."
     }
   ]
 }

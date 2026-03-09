@@ -1,37 +1,33 @@
 import React from 'react';
 import './App.css';
+
 import Header from './components/Header';
+import Authors from './components/Authors';
 import ProductCards from './components/ProductCards';
-import { CartProvider } from './context/CartProvider';
-import { BrowserRouter as Router } from 'react-router-dom';
+import CartPage from './components/CartPage';
+
+import { CartProvider } from './context/CartContext';
+import { SearchProvider } from './context/SearchContext';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <>
-        <CartProvider>
-          <div className="wrapper">
-            <Header />
-            <ProductCards />
-            <div className="icon-author">
-              {' '}
-              Автор иконок:{' '}
-              <a
-                href="https://www.flaticon.com/ru/authors/frey-wazza"
-                title="Frey Wazza"
-              >
-                {' '}
-                Frey Wazza{' '}
-              </a>{' '}
-              from{' '}
-              <a href="https://www.flaticon.com/ru/" title="Flaticon">
-                www.flaticon.com'
-              </a>
+        <SearchProvider>
+          <CartProvider>
+            <div className="wrapper">
+              <Header />
+              <Routes>
+                <Route path="/" element={<ProductCards />} />
+                <Route path="/cart" element={<CartPage />} />
+              </Routes>
+              <Authors />
             </div>
-          </div>
-        </CartProvider>
+          </CartProvider>
+        </SearchProvider>
       </>
-    </Router>
+    </BrowserRouter>
   );
 }
 
